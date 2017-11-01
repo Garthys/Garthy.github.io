@@ -21,6 +21,15 @@
 <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon.jpg">
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1889838564591074';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!-- header -->
 <!-- <div class="header" id="home">
 	<div class="container">
@@ -50,10 +59,20 @@
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
 						<ul class="social-nav model-3d-0 footer-social w3_agile_social">
+   
 						                                   <li class="share">Share On : </li>
-															<li><a href="#" class="facebook">
-																  <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-																  <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+
+															<li data-href="https://garthys.github.io/Garthy.github.io/">
+																<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgarthys.github.io%2FGarthy.github.io%2F&amp;src=sdkpreparse" class="facebook">
+																 <div class="front">
+																 	<i class="fa fa-facebook" aria-hidden="true"></i>
+																 </div>
+																  <div class="back">
+																  	<i class="fa fa-facebook" aria-hidden="true"></i>
+																 </div>
+																</a>
+															</li>
+
 															<li><a href="#" class="twitter"> 
 																  <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 																  <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
