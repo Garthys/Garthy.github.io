@@ -22,14 +22,6 @@
 </head>
 <body>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1889838564591074';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <!-- header -->
 <!-- <div class="header" id="home">
 	<div class="container">
@@ -59,11 +51,13 @@
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
 						<ul class="social-nav model-3d-0 footer-social w3_agile_social">
+
+							
    
 						                                   <li class="share">Share On : </li>
 
 															<li data-href="https://garthys.github.io/Garthy.github.io/">
-																<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgarthys.github.io%2FGarthy.github.io%2F&amp;src=sdkpreparse" class="facebook">
+																<a class="fb-xfbml-parse-ignore facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgarthys.github.io%2FGarthy.github.io%2F&amp;src=sdkpreparse" class="facebook">
 																 <div class="front">
 																 	<i class="fa fa-facebook" aria-hidden="true"></i>
 																 </div>
@@ -73,15 +67,42 @@
 																</a>
 															</li>
 
-															<li><a href="#" class="twitter"> 
-																  <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-																  <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
-															<li><a href="#" class="instagram">
-																  <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-																  <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
-															<li><a href="#" class="pinterest">
-																  <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-																  <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
+																<li>
+																  <div class="front">
+																  	<i class="fa fa-linkedin" aria-hidden="true"> 		
+																  	</i>
+																  </div>
+																  <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+							                                 <script type="IN/Share" data-url="https://garthys.github.io/Garthy.github.io/" class=""></script>
+																  <div class="back">
+																  	<i class="fa fa-linkedin" aria-hidden="true">
+																  	</i>
+																  </div>
+															</li>
+
+														    <li>
+																<a href="https://twitter.com/intent/tweet" class=" twitter-share-button twitter" url="https://garthys.github.io/Garthy.github.io/">
+																  <div class="front">
+																  	<i class="fa fa-twitter" aria-hidden="true">
+																  	</i>
+																  </div>
+																  <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i>
+																  </div>
+																</a>
+															</li>
+
+																<li>
+																<a href="#" class="pinterest">
+																  <div class="front">
+																  	<i class="fa fa-pinterest" aria-hidden="true"> 		
+																  	</i>
+																  </div>
+																  <div class="back">
+																  	<i class="fa fa-pinterest" aria-hidden="true">
+																  	</i>
+																  </div>
+																</a>
+															</li>
 														</ul>
 
 		</div>
@@ -920,6 +941,8 @@
 <!-- stats -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/jquery.countup.js"></script>
+	<!-- for bootstrap working -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 	<script>
 		$('.counter').countUp();
 	</script>
@@ -953,8 +976,34 @@
 	</script>
 <!-- //here ends scrolling icon -->
 
+<!--Facebook share button JDK-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1889838564591074';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- for bootstrap working -->
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--Asynchronously load the Twitter for Websites JavaScript-->
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
 </body>
 </html>
